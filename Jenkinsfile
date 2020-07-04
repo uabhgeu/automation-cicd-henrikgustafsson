@@ -8,8 +8,8 @@ pipeline {
                 '''
             }
         }
-         stage('Frontend tests') {alwaysLinkToLastBuild
-            steps {
+         stage('Frontend tests') {
+             steps {
                 sh '''
                     cd frontend-test1/
                     npm install && npm run cypress:run
