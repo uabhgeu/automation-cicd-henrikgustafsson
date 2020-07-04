@@ -8,7 +8,7 @@ pipeline {
                 '''
             }
         }
-         stage('Frontend tests') {
+         stage('Frontend tests') {alwaysLinkToLastBuild
             steps {
                 sh '''
                     cd frontend-test1/
